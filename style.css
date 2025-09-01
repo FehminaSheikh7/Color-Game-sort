@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+  flex-wrap:wrap;
+}
+
+.tube {
+  width: 60px;
+  height: 180px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse; /* neeche se fill hoga */
+  justify-content: flex-start;
+  padding: 5px;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tube:hover {
+  transform: scale(1.05);
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 4px auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+#resetBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50; /* green background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+#resetBtn:hover {
+  background-color: #45a049; /* slightly darker green on hover */
+  transform: scale(1.05);    /* small pop effect */
+}
+
+h2{
+  font-size: 20px;
+}
